@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class CachedImageView: UIImageView {
+public class CachedImageView: UIImageView {
     
   static let imagecache = NSCache<NSString, DiscardableImageCacheItem>()
   open var  UseEmptyImage = true
@@ -17,7 +17,7 @@ open class CachedImageView: UIImageView {
     
 // Function that Caches Image and Load Image ino ImageView
     
-    open func loadImage(UrlString: String,completion: (() -> ())? = nil) {
+    public func loadImage(UrlString: String,completion: (() -> ())? = nil) {
         
         image = nil
         
